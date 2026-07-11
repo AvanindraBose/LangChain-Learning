@@ -8,31 +8,26 @@ requires-python = ">=3.11"
 # ONLY API + INFERENCE DEPENDENCIES
 dependencies = [
   # LangChain Core
-"langchain",
-"langchain-core",
-
-# OpenAI Integration
-"langchain-openai",
-"openai",
-
-# Anthropic Integration
-"langchain-anthropic",
-
-# Google Gemini (PaLM) Integration
-"langchain-google-genai",
-"google-generativeai",
-
-# Hugging Face Integration
-"langchain-huggingface",
-"transformers",
-"huggingface-hub",
-
-# Environment Variable Management
-"python-dotenv",
-
-# Machine Learning Utilities
-"numpy",
-"scikit-learn",
+  "langchain",
+  "langchain-core",
+  # OpenAI Integration
+  "langchain-openai",
+  "openai",
+  # Anthropic Integration
+  "langchain-anthropic",
+  # Google Gemini (PaLM) Integration
+  "langchain-google-genai",
+  "google-generativeai",
+  # Hugging Face Integration
+  "langchain-huggingface",
+  "transformers",
+  "huggingface-hub",
+  # Environment Variable Management
+  "python-dotenv",
+  # Machine Learning Utilities
+  "numpy",
+  "scikit-learn",
+  "torch>=2.13.0",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
@@ -90,4 +85,4 @@ asyncio_default_fixture_loop_scope = "function"
 asyncio_default_test_loop_scope = "function"
 
 [tool.uv]
-package = true
+package = false
