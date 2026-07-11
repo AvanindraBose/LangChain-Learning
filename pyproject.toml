@@ -28,6 +28,7 @@ dependencies = [
   "numpy",
   "scikit-learn",
   "torch>=2.13.0",
+  "sentence-transformers>=5.6.0",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
