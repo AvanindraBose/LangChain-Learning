@@ -29,6 +29,7 @@ dependencies = [
   "scikit-learn",
   "torch>=2.13.0",
   "sentence-transformers>=5.6.0",
+  "streamlit>=1.59.1",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
@@ -54,7 +55,6 @@ dev = [
   "dask[dataframe]",
   "jinja2>=3.1.6",
   "graphviz>=0.21",
-  "streamlit>=1.58.0",
 ]
 
 test = [
