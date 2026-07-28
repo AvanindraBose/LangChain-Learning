@@ -1,4 +1,4 @@
-from typing import TypedDict
+from typing import TypedDict,Annotated
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
@@ -7,8 +7,8 @@ load_dotenv()
 model = ChatOpenAI()
 
 class Review(TypedDict):
-    summary: str
-    sentiment: str
+    summary: Annotated[str,"Generate the Summary of the review"]
+    sentiment: Annotated[str,"Tell the sentiment of the review either positive, negative or neutral"]
 
 struct_model = model.with_structured_output(Review)
 
