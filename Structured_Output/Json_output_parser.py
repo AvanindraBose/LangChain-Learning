@@ -23,10 +23,11 @@ template = PromptTemplate(
     partial_variables={"format_instructions" : parser.get_format_instructions()}
 )
 
-prompt = template.invoke({"book_name":"Harry Potter"})
+chain = template | model | parser
 
-result = model.invoke(prompt)
+result = chain.invoke({"book_name":"Pursuit of Happyness"})
 
-final_result = parser.parse(result.content)
-print(final_result)
-print(type(final_result))
+print(result)
+
+# The Problem with Json Output Parser is that we cannot enforce the schema. Hence to enforce it 
+# we should use -> Strucutred Output Parser
