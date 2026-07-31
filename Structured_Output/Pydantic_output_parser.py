@@ -30,10 +30,8 @@ input_variables=["place"],
 partial_variables={"format_instruction":parser.get_format_instructions()}
 )
 
-prompt = template.invoke({"place":"Indian"})
+chain = template | model | parser
 
-result = model.invoke(prompt)
-
-final_result = parser.parse(result.content)
+final_result = chain.invoke({"place":"American"})
 
 print(final_result)
