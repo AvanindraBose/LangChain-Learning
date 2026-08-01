@@ -32,6 +32,7 @@ dependencies = [
   "streamlit>=1.59.1",
   "pydantic>=2.13.4",
   "langchain-classic>=1.0.8",
+  "grandalf>=0.8",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
