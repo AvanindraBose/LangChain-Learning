@@ -34,3 +34,5 @@ except Exception as exc:
     print(f"Could not call the OpenAI API: {exc}")
 
 
+# Document Loaders are LangChain components that load data from various sources (such as PDFs, text files, web pages, or databases) 
+# and convert it into a standardized Document object that can be processed by downstream components like text splitters, embeddings, and retrievers.
