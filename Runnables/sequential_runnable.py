@@ -12,7 +12,7 @@ model = ChatOpenAI()
 parser = StrOutputParser()
 
 prompt1 = PromptTemplate(
-    template = "Write a koke on {topic}",
+    template = "Write a joke on {topic}",
     input_variables=["topic"]
 )
 
