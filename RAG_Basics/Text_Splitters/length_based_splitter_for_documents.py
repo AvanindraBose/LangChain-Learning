@@ -3,7 +3,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 splitter = CharacterTextSplitter(
     chunk_size = 2000,
-    chunk_overlap = 0,
+    chunk_overlap = 100,
     separator=""
 )
 
@@ -13,4 +13,4 @@ docs = loader.lazy_load()
 
 text = splitter.split_documents(docs)
 
-print(text[0].metadata)
+print(text[0].page_content)
