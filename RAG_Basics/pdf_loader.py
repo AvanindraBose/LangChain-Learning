@@ -1,6 +1,9 @@
 from langchain_community.document_loaders import PyPDFLoader
+from pathlib import Path
 
-loader = PyPDFLoader('pdf_loader_understanding.pdf')
+BASE_DIR = Path(__file__).resolve().parent
+
+loader = PyPDFLoader(BASE_DIR / 'pdf_loader_understanding.pdf')
 
 docs = loader.load()
 
