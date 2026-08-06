@@ -37,6 +37,8 @@ dependencies = [
   "langchain-community>=0.4.2",
   "pypdf>=6.14.2",
   "bs4>=0.0.2",
+  "chromadb>=1.5.9",
+  "tiktoken>=0.13.0",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
