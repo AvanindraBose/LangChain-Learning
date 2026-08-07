@@ -41,6 +41,7 @@ dependencies = [
   "tiktoken>=0.13.0",
   "langchain-chroma>=1.1.0",
   "faiss-cpu>=1.15.0",
+  "wikipedia>=1.4.0",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
