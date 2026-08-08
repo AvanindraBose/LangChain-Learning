@@ -43,6 +43,7 @@ dependencies = [
   "faiss-cpu>=1.15.0",
   "wikipedia>=1.4.0",
   "youtube-transcript-api>=1.2.4",
+  "duckduckgo-search>=8.1.1",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
