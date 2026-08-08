@@ -1,0 +1,7 @@
+# Intuition Behind the Need of RAG.
+
+Large Language Models have three key limitations in enterprise applications. First, they do not have access to an organization's private data unless that information is explicitly provided. Second, their internal knowledge becomes outdated because it reflects the data available during training. Third, they may hallucinate by generating plausible but incorrect answers.
+
+One solution is fine-tuning, where a pretrained model is further trained on domain-specific data. Fine-tuning can improve the model's understanding of a specific domain or task, but it is computationally expensive, requires specialized expertise, and is not practical when the underlying knowledge changes frequently because retraining is required.
+
+Another approach is in-context learning, where we provide examples directly in the prompt. Retrieval-Augmented Generation (RAG) extends this idea by dynamically retrieving relevant information from an external knowledge source—such as documents stored in a vector database—and injecting that context into the prompt. Since the model's weights remain unchanged, updating the knowledge base only requires updating the external documents rather than retraining the model. A typical RAG pipeline consists of four stages: Indexing, Retrieval, Augmentation, and Generation.
