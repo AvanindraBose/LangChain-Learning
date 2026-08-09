@@ -44,6 +44,7 @@ dependencies = [
   "wikipedia>=1.4.0",
   "youtube-transcript-api>=1.2.4",
   "duckduckgo-search>=8.1.1",
+  "ddgs>=9.14.4",
 ]
 
 # OPTIONAL GROUPS FOR TRAINING / PIPELINES
